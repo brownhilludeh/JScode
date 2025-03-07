@@ -58,10 +58,11 @@
                         <label for="package" class="form-label">Please select the type of birthday package
                             below</label>
                         <select class="form-select" id="package" aria-label="Birthday Package">
-                            <option selected>-- Choose --</option>
-                            <option value="basic" id="basic">Basic Package</option>
-                            <option value="premium" id="premium">Premium Package</option>
-                            <option value="deluxe" id="deluxe">Deluxe Package</option>
+                            <option value="Basic" id="basic">Basic Package @$10 per 10 guests</option>
+                            <option value="Premium" id="premium">Premium Package @$15 per 10 guests</option>
+                            <option value="Deluxe" id="deluxe">Deluxe Package @$20 per 10 guests</option>
+                            <option value="VIP" id="vip">VIP Package @$30 per 10 guests</option>
+                            <option value="Exclusive" id="exclusive">Exclusive Package @$50 per 10 guests"></option>
                         </select>
                     </div>
                 </div>
@@ -70,11 +71,12 @@
                         <label for="dayTime" class="form-label">Please select the desired day and time for the
                             birthday</label>
                         <select class="form-select" id="dayTime" aria-label="Day and Time">
-                            <option selected>-- Choose--</option>
-                            <option value="weekdayAfternoon" id="weekdayAfternoon">Weekday Afternoon</option>
-                            <option value="weekdayEvening" id="weekdayEvening">Weekday Evening</option>
-                            <option value="weekendAfternoon" id="weekendAfternoon">Weekend Afternoon</option>
-                            <option value="weekendEvening" id="weekendEvening">Weekend Evening</option>
+                            <option value="Weekday Morning" id="weekdayMorning">Weekday Morning 3</option>
+                            <option value="Weekday Afternoon" id="weekdayAfternoon">Weekday Afternoon</option>
+                            <option value="Weekday Evening" id="weekdayEvening">Weekday Evening</option>
+                            <option value="Weekend Morning" id="weekendMorning">Weekend Morning</option>
+                            <option value="Weekend Afternoon" id="weekendAfternoon">Weekend Afternoon</option>
+                            <option value="Weekend Evening" id="weekendEvening">Weekend Evening</option>
                         </select>
                     </div>
                 </div>
@@ -84,23 +86,23 @@
                     <p>Each add-on selected is an additional $10.75 on the final price.</p>
                     <div class="mb-3">
                         <div class="form-check mb-3 mt-3">
-                            <input class="form-check-input" type="checkbox" id="pizza">
+                            <input class="form-check-input" name="addOns" type="checkbox" id="pizza">
                             <label class="form-check-label" for="pizza">Pizza Included</label>
                         </div>
                         <div class="form-check mb-3 mt-3">
-                            <input class="form-check-input" type="checkbox" id="drinks">
+                            <input class="form-check-input" name="addOns" type="checkbox" id="drinks">
                             <label class="form-check-label" for="drinks">Drinks Included</label>
                         </div>
                         <div class="form-check mb-3 mt-3">
-                            <input class="form-check-input" type="checkbox" id="decorations">
+                            <input class="form-check-input" name="addOns" type="checkbox" id="decorations">
                             <label class="form-check-label" for="decorations">Decorations Included</label>
                         </div>
                         <div class="form-check mb-3 mt-3">
-                            <input class="form-check-input" type="checkbox" id="iceCream">
+                            <input class="form-check-input" name="addOns" type="checkbox" id="iceCream">
                             <label class="form-check-label" for="iceCream">Ice Cream Included</label>
                         </div>
                         <div class="form-check mb-3 mt-3">
-                            <input class="form-check-input" type="checkbox" id="tour">
+                            <input class="form-check-input" name="addOns" type="checkbox" id="tour">
                             <label class="form-check-label" for="tour">Tour Included</label>
                         </div>
                     </div>
@@ -143,7 +145,7 @@
 
         </form>
 
-        <div class="outputDiv" id="outputDiv"></div>
+        <div class="outputDiv mt-3" id="outputDiv"></div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
